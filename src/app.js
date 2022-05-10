@@ -5,7 +5,7 @@ import "./style.css";
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
-onload = function() {
+window.onload = function() {
   //write your code here
 
   let who = ["The dog", "My grandma", "His turtle", "My bird"];
@@ -20,13 +20,13 @@ onload = function() {
   ];
 
   let excusa =
-    who[Math.floor(Math.random() * 4)] +
+    who[Math.floor(Math.random() * who.length)] +
     " " +
-    action[Math.floor(Math.random() * 4)] +
+    action[Math.floor(Math.random() * action.length)] +
     " " +
-    what[Math.floor(Math.random() * 3)] +
+    what[Math.floor(Math.random() * what.length)] +
     " " +
-    when[Math.floor(Math.random() * 5)];
+    when[Math.floor(Math.random() * when.length)];
 
   return excusa;
 };
